@@ -1,0 +1,7 @@
+Comment,Designator,Footprint,LCSC
+"LED","D1,D2","LED_SMD:LED_0805_2012Metric",""
+"Raspberry_Pi_2_3","J1","Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical",""
+"10kΩ","R1,R4","Resistor_SMD:R_0805_2012Metric",""
+"330Ω","R2,R3","Resistor_SMD:R_0805_2012Metric",""
+"SW_DPST","SW1","freetronics_footprints:SW_PUSHBUTTON_PTH",""
+"DHT22","U1","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",""

@@ -19,7 +19,7 @@ U 1 1 5FC10FDE
 P 6100 3850
 F 0 "J1" H 6750 5200 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 6700 5150 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 6100 3850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 6100 3850 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6100 3850 50  0001 C CNN
 	1    6100 3850
 	1    0    0    -1  
@@ -29,7 +29,7 @@ L Device:R R3
 U 1 1 5FC14CAD
 P 7400 3750
 F 0 "R3" H 7470 3796 50  0000 L CNN
-F 1 "R" H 7470 3705 50  0000 L CNN
+F 1 "330Ω" H 7470 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 3750 50  0001 C CNN
 F 3 "~" H 7400 3750 50  0001 C CNN
 	1    7400 3750
@@ -40,7 +40,7 @@ L Device:R R1
 U 1 1 5FC14FE2
 P 3100 3400
 F 0 "R1" H 3170 3446 50  0000 L CNN
-F 1 "R" H 3170 3355 50  0000 L CNN
+F 1 "10kΩ" H 3170 3355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3030 3400 50  0001 C CNN
 F 3 "~" H 3100 3400 50  0001 C CNN
 	1    3100 3400
@@ -63,7 +63,7 @@ U 1 1 5FC16D62
 P 4350 3950
 F 0 "U1" H 4106 3996 50  0000 R CNN
 F 1 "DHT22" H 4106 3905 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4106 3859 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4106 3859 50  0001 R CNN
 F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 4500 4200 50  0001 C CNN
 	1    4350 3950
 	1    0    0    -1  
@@ -88,7 +88,7 @@ L Device:R R2
 U 1 1 5FC154AA
 P 4650 3350
 F 0 "R2" V 4443 3350 50  0000 C CNN
-F 1 "R" V 4534 3350 50  0000 C CNN
+F 1 "330Ω" V 4534 3350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 3350 50  0001 C CNN
 F 3 "~" H 4650 3350 50  0001 C CNN
 	1    4650 3350
@@ -265,7 +265,7 @@ L Device:R R4
 U 1 1 5FC68A6F
 P 8050 3750
 F 0 "R4" H 8120 3796 50  0000 L CNN
-F 1 "R" H 8120 3705 50  0000 L CNN
+F 1 "10kΩ" H 8120 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7980 3750 50  0001 C CNN
 F 3 "~" H 8050 3750 50  0001 C CNN
 	1    8050 3750
