@@ -1,0 +1,302 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Raspberry Pi Hat"
+Date "2020-11-27"
+Rev "v1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5FC10FDE
+P 6100 3850
+F 0 "J1" H 6750 5200 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 6700 5150 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 6100 3850 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6100 3850 50  0001 C CNN
+	1    6100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FC14CAD
+P 7400 3750
+F 0 "R3" H 7470 3796 50  0000 L CNN
+F 1 "R" H 7470 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 3750 50  0001 C CNN
+F 3 "~" H 7400 3750 50  0001 C CNN
+	1    7400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC14FE2
+P 3100 3400
+F 0 "R1" H 3170 3446 50  0000 L CNN
+F 1 "R" H 3170 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3030 3400 50  0001 C CNN
+F 3 "~" H 3100 3400 50  0001 C CNN
+	1    3100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FC15CD2
+P 7400 4200
+F 0 "D1" V 7439 4082 50  0000 R CNN
+F 1 "LED" V 7348 4082 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7400 4200 50  0001 C CNN
+F 3 "~" H 7400 4200 50  0001 C CNN
+	1    7400 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensor:DHT11 U1
+U 1 1 5FC16D62
+P 4350 3950
+F 0 "U1" H 4106 3996 50  0000 R CNN
+F 1 "DHT22" H 4106 3905 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4106 3859 50  0001 R CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 4500 4200 50  0001 C CNN
+	1    4350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3550 7400 3550
+Wire Wire Line
+	7400 3550 7400 3600
+Wire Wire Line
+	7400 3900 7400 4050
+Wire Wire Line
+	4350 3650 4350 3350
+Wire Wire Line
+	4650 3950 4950 3950
+Wire Wire Line
+	4950 3950 4950 3350
+Wire Wire Line
+	4950 3350 5300 3350
+Connection ~ 4950 3350
+$Comp
+L Device:R R2
+U 1 1 5FC154AA
+P 4650 3350
+F 0 "R2" V 4443 3350 50  0000 C CNN
+F 1 "R" V 4534 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 3350 50  0001 C CNN
+F 3 "~" H 4650 3350 50  0001 C CNN
+	1    4650 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3350 4950 3350
+Wire Wire Line
+	4500 3350 4350 3350
+Wire Wire Line
+	4350 4250 4350 4600
+Wire Wire Line
+	5700 5350 5700 5150
+NoConn ~ 5900 2550
+NoConn ~ 6000 2550
+NoConn ~ 6300 2550
+NoConn ~ 6900 2950
+NoConn ~ 6900 3050
+NoConn ~ 6900 3250
+NoConn ~ 6900 3350
+NoConn ~ 6900 3650
+NoConn ~ 6900 3750
+NoConn ~ 6900 3950
+NoConn ~ 6900 4050
+NoConn ~ 6900 4150
+NoConn ~ 6900 4250
+NoConn ~ 6900 4350
+NoConn ~ 6900 4550
+NoConn ~ 6900 4650
+NoConn ~ 5300 4550
+NoConn ~ 5300 4450
+NoConn ~ 5300 4350
+NoConn ~ 5300 4250
+NoConn ~ 5300 4150
+NoConn ~ 5300 4050
+NoConn ~ 5300 3850
+NoConn ~ 5300 3750
+NoConn ~ 5300 3650
+NoConn ~ 5300 3450
+NoConn ~ 5300 3250
+NoConn ~ 5300 3050
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FC3536C
+P 4350 3350
+F 0 "#FLG0101" H 4350 3425 50  0001 C CNN
+F 1 "PWR_FLAG" V 4350 3477 50  0000 L CNN
+F 2 "" H 4350 3350 50  0001 C CNN
+F 3 "~" H 4350 3350 50  0001 C CNN
+	1    4350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FC363C6
+P 4450 4600
+F 0 "#FLG0102" H 4450 4675 50  0001 C CNN
+F 1 "PWR_FLAG" V 4450 4728 50  0000 L CNN
+F 2 "" H 4450 4600 50  0001 C CNN
+F 3 "~" H 4450 4600 50  0001 C CNN
+	1    4450 4600
+	0    1    1    0   
+$EndComp
+NoConn ~ 5900 5150
+NoConn ~ 6000 5150
+NoConn ~ 6100 5150
+NoConn ~ 6200 5150
+NoConn ~ 6300 5150
+NoConn ~ 6400 5150
+$Comp
+L power:GND #PWR0101
+U 1 1 5FC3D2BF
+P 5800 5350
+F 0 "#PWR0101" H 5800 5100 50  0001 C CNN
+F 1 "GND" H 5805 5177 50  0000 C CNN
+F 2 "" H 5800 5350 50  0001 C CNN
+F 3 "" H 5800 5350 50  0001 C CNN
+	1    5800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5350 5800 5150
+Wire Wire Line
+	4450 4600 4350 4600
+Wire Wire Line
+	5700 5350 5800 5350
+Connection ~ 5800 5350
+$Comp
+L power:GND #PWR0102
+U 1 1 5FC433FE
+P 4350 4700
+F 0 "#PWR0102" H 4350 4450 50  0001 C CNN
+F 1 "GND" H 4355 4527 50  0000 C CNN
+F 2 "" H 4350 4700 50  0001 C CNN
+F 3 "" H 4350 4700 50  0001 C CNN
+	1    4350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FC43ACA
+P 3100 3700
+F 0 "#PWR0103" H 3100 3450 50  0001 C CNN
+F 1 "GND" H 3105 3527 50  0000 C CNN
+F 2 "" H 3100 3700 50  0001 C CNN
+F 3 "" H 3100 3700 50  0001 C CNN
+	1    3100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3550 3100 3700
+Wire Wire Line
+	4350 4700 4350 4600
+Connection ~ 4350 4600
+Text Label 5300 2950 2    50   ~ 0
+button_input
+Text Label 3100 3100 0    50   ~ 0
+button_input
+Text Label 6200 2550 1    50   ~ 0
+3v3
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 5FC1443E
+P 3100 2700
+F 0 "SW1" V 3054 2888 50  0000 L CNN
+F 1 "SW_DPST" V 3145 2888 50  0000 L CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" V 3191 2888 50  0001 L CNN
+F 3 "~" H 3100 2700 50  0001 C CNN
+	1    3100 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 2900 3000 2950
+Wire Wire Line
+	3200 2950 3200 2900
+Wire Wire Line
+	3000 2500 3000 2450
+Wire Wire Line
+	3000 2450 3100 2450
+Wire Wire Line
+	3200 2450 3200 2500
+Text Label 3100 2350 1    50   ~ 0
+3v3
+Wire Wire Line
+	3100 2350 3100 2450
+Connection ~ 3100 2450
+Wire Wire Line
+	3100 2450 3200 2450
+Text Label 4350 3350 1    50   ~ 0
+3v3
+Connection ~ 4350 3350
+Wire Wire Line
+	3000 2950 3100 2950
+Wire Wire Line
+	3100 2950 3100 3250
+Connection ~ 3100 2950
+Wire Wire Line
+	3100 2950 3200 2950
+$Comp
+L power:GND #PWR0104
+U 1 1 5FC63609
+P 7400 4450
+F 0 "#PWR0104" H 7400 4200 50  0001 C CNN
+F 1 "GND" H 7405 4277 50  0000 C CNN
+F 2 "" H 7400 4450 50  0001 C CNN
+F 3 "" H 7400 4450 50  0001 C CNN
+	1    7400 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4350 7400 4450
+$Comp
+L Device:R R4
+U 1 1 5FC68A6F
+P 8050 3750
+F 0 "R4" H 8120 3796 50  0000 L CNN
+F 1 "R" H 8120 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7980 3750 50  0001 C CNN
+F 3 "~" H 8050 3750 50  0001 C CNN
+	1    8050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FC69048
+P 8050 4200
+F 0 "D2" V 8089 4082 50  0000 R CNN
+F 1 "LED" V 7998 4082 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8050 4200 50  0001 C CNN
+F 3 "~" H 8050 4200 50  0001 C CNN
+	1    8050 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8050 3900 8050 4050
+Text Label 8050 3600 1    50   ~ 0
+3v3
+$Comp
+L power:GND #PWR0105
+U 1 1 5FC69D28
+P 8050 4450
+F 0 "#PWR0105" H 8050 4200 50  0001 C CNN
+F 1 "GND" H 8055 4277 50  0000 C CNN
+F 2 "" H 8050 4450 50  0001 C CNN
+F 3 "" H 8050 4450 50  0001 C CNN
+	1    8050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4350 8050 4450
+$EndSCHEMATC
